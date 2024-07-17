@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>twitter</title>
+        <style>
+          h1 {
+             color: blue; 
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          }
+          h2 {
+             color: royalblue; 
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          }
+          .column {
+            float: left;
+            width: 60px;
+            height: 45px;
+          }
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          #name {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;
+          width: 100px;
+          height: 10px;
+          border-color: #36CFFF;
+          }
+          #subscribe {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;
+          width: 100px;
+          height: 10px;
+          border-color: #36CFFF;
+          }
+          #mention {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;
+          width: 100px;
+          height: 10px;
+          border-color: #36CFFF;
+          }
+          #hashtag {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;
+          width: 100px;
+          height: 10px;
+          border-color: #36CFFF;
+          }
+          #tweet {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;
+          width: 100px;
+          height: 10px;
+          border-color: #36CFFF;
+          }
+          #password {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;         
+          width: 100px;
+          height: 10px;
+          border-color: #36CFFF;
+          }
+          p.text1 {
+            float:none;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-weight: bold;
+          color: royalblue; 
+          }
+          p.text2 {
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-weight: bold;
+          color: rgb(36, 131, 255); 
+          }
+          input[type=button], input[type=reset], input[type=submit] {
+          background-color: #1fb7cf;
+          border-radius: 10px;
+          border: none;
+          color: white;
+          padding: 4px 26px;
+          text-decoration: none;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          margin: 4px 2px;
+          cursor: pointer;
+          }
+    </style>   
+    </head>
+<body>
+  <div class="row">
+    <div class="column">
+        <img width="40" height="40" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4n_urpJ9XpwOTdzBVbGvactwHrPagYQrTJPYjxfxLGkSyu7nJZVqRVGAeohnPgKMrnKE&usqp=CAU" alt="Twitter" />
+    </div>
+    <div class="column">
+        <h1>Twitter</h1>
+    </div>
+</div>
+<h2>Features</h2>
+<form action="./tweet">
+  <p class = "text1">Tweet: <input type="text" id="tweet" name="tweet"></p>
+  <input type="submit" value="Tweet">
+</form> 
+<form action="./search/mention">
+  <p class = "text1">Mention: <input type="text" id="mention" name="mention"></p>
+  <input type="submit" value="Search">
+</form> 
+<form action="./search/hashtag">
+  <p class = "text1">Hashtag: <input type="text" id="hashtag" name="hashtag"></p>
+    <input type="submit" value="Search">
+  </form> 
+  <!-- <form action="./search/subscribe">
+    <p class = "text1">Subscribed Username: <input type="text" id="subscribe" name="subscribe"></p>
+    <input type="submit" value="Search">
+  </form>  -->
+  <form action="./subscribe">
+    <p class = "text1">Username: <input type="text" id="name" name="name"></p>
+    <input type="submit" value="Subscribe">
+  </form> 
+  <form action="./feed">
+    <input type="submit" value="Feed">
+  </form> 
+  <br><br><br><br><br><br>
+  <p class = "text2">
+    COP-5615 DOSP Project 4 part II <br>
+    Team Members: <br>
+    Aadithya Kandeth - 6980 2791 <br>
+    Anol Kurian Vadakkeparampil - 5626 8544 
+</p>
+</body>
+</html>
